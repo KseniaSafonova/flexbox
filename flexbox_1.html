@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            background-color: rgb(216, 211, 211);
+            color: rgb(163, 10, 74);
+            text-align: center;
+        }
+
+        .flex_container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            width: 100%;
+            height: 10vh;
+        }
+
+        main {
+            display: flex;
+            background-color: rgb(235, 178, 151);
+            width: 70%;
+            height: 70vh;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            align-content: flex-end;
+        }
+
+        .main {
+            background-color: rgb(233, 136, 152);
+            width: 47%;
+            height: 20%;
+            margin: 10px;
+        }
+
+        #big {
+            width: 100%;
+        }
+
+        aside {
+            background-color: rgb(159, 231, 145);
+            width: 30%;
+            height: 70vh;
+        }
+        
+        footer {
+            display: flex;
+            background-color: rgb(216, 211, 211);
+            width: 100%;
+            height: 18vh;
+            justify-content: space-around;
+            align-items: center; 
+        }
+
+        .footer {
+            background-color: rgb(250, 250, 250);
+            width: 20%;
+            height: 70%;
+        }
+    </style>
+</head>
+    <body class="flex_container">
+        <header>Шапка страницы</header>
+        <main> <!--Основная часть-->
+            <div class="main">Секция 1</div> 
+            <div class="main">Секция 2</div>
+            <div class="main" id="big">Секция 3</div> 
+        </main>
+            <aside>Боковая область</aside>  
+        <footer>
+            <div class="footer">Секция футера 1</div>
+            <div class="footer">Секция футера 2</div>
+            <div class="footer">Секция футера 3</div>
+            <div class="footer">Секция футера 4</div>
+        </footer>
+    </body>
+</html>
